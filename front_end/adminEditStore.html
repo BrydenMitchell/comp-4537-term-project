@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Edit Store View</title>
+</head>
+<body>
+  <h1>Admin Edit Store View</h1>
+  <div>
+    <a href="admin.html">
+      <button>
+      Admin Home Page
+    </button>
+    </a>
+  </div>
+  <div>
+    <a href="adminViewStore.html">
+      <button>
+      Click to view Store
+    </button>
+    </a>
+  </div>  
+
+  <form id="herbEntry", onsubmit="updateItem()">
+    <h3 id="currentHerb"></h3>
+    <label for="Herb Name">Herb name:</label><br>
+    <input type="text" id="herbName"><br>
+    <label for="Herb Price">Herb Price:</label><br>
+    <input type="text" id="herbPrice"><br>
+    <label for="Herb Price">Herb Quantity:</label><br>
+    <input type="text" id="herbQuantity"><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+  <br>
+  <div id="herbDisplay"></div>
+<script src="admin.js"></script>
+<script>getHashCode()</script>
+
+</body>
+
+</html>

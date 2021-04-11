@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Log In </h1>
+    <form onsubmit="verifyUser();return false">
+        <label>username</label>
+        <input id="id", type="text">
+        <br>
+        <label>password</label>
+        <input id="pw", type="text">
+        <br>
+        <button type="submit">login</button>
+    </form>
+    <script src="index.js"></script>
+
+    <br>
+
+    <h1>Sign Up as New User </h1>
+    <form onsubmit="signup()">
+        <label>username</label>
+        <input id="username", type="text">
+        <br>
+        <label>password</label>
+        <input id="password", type="text">
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+
+</html>

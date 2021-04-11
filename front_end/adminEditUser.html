@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Edit User View</title>
+</head>
+<body>
+  <h1>Admin Edit User View</h1>
+  <div>
+    <a href="admin.html">
+      <button>
+      Admin Home Page
+    </button>
+    </a>
+  </div>
+  <div>
+    <a href="adminViewUser.html">
+      <button>
+      Click to view Users
+    </button>
+    </a>
+  </div>  
+
+  <form id="herbEntry", onsubmit="updateUser()">
+    <h3 id="currentHerb"></h3>
+    <label for="User Name">User Name:</label><br>
+    <input type="text" id="userName"><br>
+    <label for="User Password">User Password:</label><br>
+    <input type="text" id="userPassword"><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+  <br>
+  <div id="userDisplay"></div>
+<script src="admin.js"></script>
+<script>getHashCode()</script>
+
+</body>
+
+</html>
